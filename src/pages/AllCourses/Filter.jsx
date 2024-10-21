@@ -19,7 +19,7 @@ export default function Filter(props) {
 
   return (
     <li className="filter-toggle" onClick={handleClick}>
-      <img src={rb} alt="rb" />
+      <img src={rbDef} alt="rb" />
       <p>{props.text}</p>
     </li>
   );
