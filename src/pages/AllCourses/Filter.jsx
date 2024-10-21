@@ -11,7 +11,7 @@ export default function Filter(props) {
       rbParentNode.children[i]
         .getElementsByTagName("img")[0]
         .setAttribute("src",  rbDef );
-    }
+    } 
 
     rb.classList.add("filter-toggle-active");
     rb.getElementsByTagName("img")[0].setAttribute("src",  rbActive );
