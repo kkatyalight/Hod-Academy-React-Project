@@ -10,11 +10,11 @@ export default function Filter(props) {
       rbParentNode.children[i].classList.remove("filter-toggle-active");
       rbParentNode.children[i]
         .getElementsByTagName("img")[0]
-        .setAttribute("src", { rbDef });
+        .setAttribute("src",  rbDef );
     }
 
     rb.classList.add("filter-toggle-active");
-    rb.getElementsByTagName("img")[0].setAttribute("src", { rbActive });
+    rb.getElementsByTagName("img")[0].setAttribute("src",  rbActive );
   }
 
   return (
