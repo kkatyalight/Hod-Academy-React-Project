@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom"
+
 export default function FooterIcons(props){
     return(
         <li>
-        <a href="" className="">
+            <Link>
             <img src={props.imgSrc} alt={props.imgAlt}/>
-        </a>
+            </Link>
     </li>
     );
 }
