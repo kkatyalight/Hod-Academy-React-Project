@@ -1,5 +1,5 @@
 import rbActive from "../../assets/radiobutton_active.svg";
-import rb from "../../assets/radiobutton.svg";
+import rbDef from "../../assets/radiobutton.svg";
 
 export default function Filter(props) {
   function handleClick(e) {
@@ -10,13 +10,13 @@ export default function Filter(props) {
       rbParentNode.children[i].classList.remove("filter-toggle-active");
       rbParentNode.children[i]
         .getElementsByTagName("img")[0]
-        .setAttribute("src", "src/assets/radiobutton.svg");
+        .setAttribute("src", {rbDef});
     }
 
     rb.classList.add("filter-toggle-active");
     rb.getElementsByTagName("img")[0].setAttribute(
       "src",
-      "src/assets/radiobutton_active.svg"
+      {rbActive}
     );
   }
 
