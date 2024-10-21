@@ -1,0 +1,71 @@
+.course-page-flex-wrap{
+    /* margin-top: 5rem;
+    display: flex;
+    flex-direction: column; 
+    gap: 2.5rem; */
+    position: relative;
+}
+.owl{
+    height: 29rem;
+    width: auto;
+    position: absolute;
+    right: 2rem;
+    bottom: 0;
+}
+.text-near-owl{
+    max-width: 78rem;
+}
+.intermidBanner{
+    width:100%;
+    height: 19.375rem;
+    border-top: 0.625rem dashed;
+    border-color: #F6F7F9;
+    background-color: #00093C;
+    /* position: relative; */
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* gap: 3rem; */
+}
+.intermidBanner-text{
+    /* position: absolute; */
+    /* height: inherit; */
+    /* top: 6rem; */
+    display: flex;
+    gap: 12rem;
+}
+
+.intermidBanner-button{
+    align-self: center;
+    /* position: absolute;
+    top: 13rem; */
+}
+.course-info-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+}
+.course-info-wrapper-row1{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+/* .questions{
+    margin-top: 4rem;
+    margin-bottom: 6.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+} */
+.close-icon{
+    position: absolute;
+    right: 1.875rem;
+    top: 1.875rem;
+    transform: rotate(45deg);
+    transition: 0.3s;
+}
+.close-icon-opened{
+    transform: rotate(0deg);
+}

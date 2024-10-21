@@ -1,0 +1,52 @@
+.login-wrap{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+}
+.login-choose-option{
+    /* grid-column: 4/10; */
+    display: flex;
+    flex-direction: row;
+text-align: center;
+gap: 1rem;
+}
+.login-choose-option p{
+    width: 17.5rem;
+    cursor: pointer;
+}
+.login-inputs{
+    /* grid-column: 5/9; */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.login-with{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.login-with-social{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.input-login{
+    width: 23.75rem;
+    height: 3.125rem;
+    background: #DDDFE6;
+    border-radius: 0.5rem;
+    border-color: #DDDFE6;
+}
+.input-login:focus{
+    outline: none;
+}
+.owl-login{
+    position: absolute;
+    left: 10%;
+    top: 30%;
+}

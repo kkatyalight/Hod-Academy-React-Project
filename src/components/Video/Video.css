@@ -1,0 +1,44 @@
+.main-general-info-video{
+    /* margin: 0 22.5rem; */
+    margin-bottom: 7.25rem;
+    display: flex;
+    justify-content: center;
+    
+    position: relative;
+}
+.video-paused-overlay{
+    position: absolute;
+    z-index:300000;
+
+    border-radius: 1.25rem;
+    width: 48.75rem;
+    height: 27.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 9, 60, 0.6);
+}
+.video-paused-overlay img{
+    width: 6.125rem;
+    height: 6.125rem;
+    transition: 0.3s;
+}
+.video-paused-overlay img:hover{
+    cursor: pointer;
+    transform: scale(105%);
+}
+.video-paused-overlay img:active{
+    transform: scale(80%);
+}
+.video-paused-hide{
+    display: none;
+}
+
+video {
+    border-radius: 1.25rem;
+    width: 48.75rem;
+    height: 27.25rem;
+}
+video:hover{
+    cursor: pointer;
+}

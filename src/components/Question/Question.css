@@ -1,0 +1,13 @@
+.question{
+    background-color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    position: relative;
+    transform-style: preserve-3d;
+    border-radius: 0.5rem;
+}
+.answer{
+    max-width: 90%;
+}

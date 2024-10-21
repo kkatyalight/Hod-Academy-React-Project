@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;;
+}
+
+a,p,text{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol{
+    list-style: none;
+}
+button {
+    background: none;
+    border: none;
+    padding: 0;
+}
+html, body{
+    width: 100%;
+    background-color: var(--background);
+    zoom: 80%
+}
+.side-margins{
+    margin: 0 15%;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1.25rem;
+}
+.grid4rows{
+    grid-template-rows: repeat(4, auto);
+}
+
+:root{
+    --gradient1: linear-gradient(to right, #F7941D, #27AAE1);
+    --gradient2: linear-gradient(#F7941D, #27AAE1);
+    --gradient-shadow: linear-gradient(to right, rgba(247, 148, 29,.3), rgba(39, 170, 225,0.3));
+    --gradient-shadow-hover: linear-gradient(to right, rgba(247, 148, 29,.8), rgba(39, 170, 225,0.8));
+    --dark-blue: #00093C;
+    --orange: #F7941D;
+    --blue: #27AAE1;
+    --background: #F6F7F9;
+    --grey5: #E0E0E0;
+    --grey4: #BDBDBD;
+    --grey2: #4F4F4F;
+
+    --dot-bg: #00093C;
+    --dot-color: #27AAE1;
+    --dot-size: 0.125rem;
+    --dot-space: 1.25rem;
+
+    --count-from:0;
+    --count-to:50;
+
+}
+
+/*background with dott pattern*/
+.dotted-background{
+    background-color: #00093C;
+    background-image: radial-gradient(rgba(39, 170, 225,0.6) 2px, transparent 0px);
+    background-size: 1.25rem 1.25rem;
+    width:100%;
+    height: 9.375rem;
+}
+.text-on-dotts{
+    box-sizing: border-box;
+    padding: 1rem;
+    background-color: var(--dark-blue);
+}
+
+/*https://habr.com/ru/companies/skillfactory/articles/718732/*/
+
+.shadow:before {
+    content:"";
+    position: absolute;
+    inset: 0;
+    transform: translate3d(0,0,-1px);
+    background: var(--gradient-shadow);
+    filter: blur(1rem);
+    background-size: 120%;
+  }
+
+  .shadow:hover::before{
+    background: var(--gradient-shadow-hover);
+    filter: blur(1.25rem);
+    background-size: 120%;
+}
+
+/*https://ru.stackoverflow.com/questions/1109571/Анимация-линий-расходящихся-в-разные-стороны*/
+.gradient-bottom-border{
+    position: relative;
+    /* background: black; */
+
+    width: inherit;
+    height: 0.25rem;
+}
+/*add class*/
+.fill-inactive{
+    position: absolute;
+    content:'';
+    width: 100%;
+    height: 100%;
+    background-image: var(--gradient1);
+    top: 50%;
+    left: 50%;
+    display: block;
+    transition: .3s;
+    transform: translate(-50%,-50%) scaleX(0);
+}
+
+.addBottomBorderIfSelected li:hover .fill-inactive{
+    transform: translate(-50%,-50%) scaleX(1);
+}
+
+.fill-active{
+    position: absolute;
+    content:'';
+    width: 100%;
+    height: 100%;
+    background-image: var(--gradient1);
+}
+
+.bg-white{
+    background-color: #ffffff;
+}
+.bg-course-1{
+    background-color: #C7EEFF;
+}
+.bg-course-2{
+    background-color: #FFCE94;
+}
+.bg-course-3{
+    background-color: #FFE38E;
+}
+.bg-course-4{
+    background-color: #DDDDFF;
+}
+.bg-course-5{
+    background-color: #B8EFCF;
+}
+.bg-course-6{
+    background-color: #C7EEFF;
+}
+.bg-course-7{
+    background-color: #FFE9A8;
+}
+.bg-course-8{
+    background-color: #FFEEF6;
+}
+.bg-course-9{
+    background-color: #DDDDFF;
+}
+

@@ -1,0 +1,91 @@
+
+.all-courses-headtext{
+    grid-column: 1/13;
+    margin-top: 2.25rem;
+    margin-bottom: 3.375rem;
+    grid-row: 1;
+}
+/*main-general-info*/
+.main-general-info{
+    margin-bottom: 6.75rem;
+}
+
+.main-general-info-courses{
+    /* display: flex;
+    flex-direction: column; */
+    /*display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap:2rem; */
+    grid-column: 4/13;
+    grid-row: 2/5;
+    /* margin-bottom: 13rem; */
+    margin-bottom: 5rem;
+}
+
+.main-general-info-courses-small-margin{
+    margin-bottom: 3.75rem;
+}
+
+.main-general-info-courses-age{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* padding-bottom: 1rem; */
+    border-bottom: var(--grey5) 0.0625rem solid;
+}
+.age-list-el{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.age-list-el div{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.main-general-info-courses-age li:hover{
+   cursor: pointer;
+}
+
+.main-general-info-courses-name{
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+.main-general-info-courses-name li{
+    position: relative;
+    transform-style: preserve-3d;
+
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    background: white;
+
+    transition: 0.3s;
+}
+.shadow:hover::before{
+    background: var(--gradient-shadow-hover);
+    filter: blur(1.25rem);
+    background-size: 120%;
+}
+.main-general-info-courses-name li:hover{
+    cursor: pointer;
+    transform: scale(105%); 
+}
+
+
+
+
+
+
+
+
+
+

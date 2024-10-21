@@ -1,0 +1,22 @@
+.advantages{
+    /* margin-top: 3rem; */
+    margin-bottom: 5rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+
+.advantages ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap:1.5rem;
+    width: 17.5rem;
+}
+.advantages ul li img{
+   max-height: 3.125rem;
+   width: auto;
+}

@@ -1,0 +1,21 @@
+.news-long-text{
+    white-space: pre-line;  
+vertical-align: bottom;
+}
+
+.news-page{
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.875rem;
+    margin-bottom: 3.75rem;
+    /* gap: 5rem; */
+}
+
+.news-page img{
+   width: 48.75rem;
+   height: auto;
+    border-radius: 0 0 2rem 2rem;   
+     /* grid-column: 3/11; */
+     align-self: center;
+}

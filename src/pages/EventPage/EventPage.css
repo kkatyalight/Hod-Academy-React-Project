@@ -1,0 +1,40 @@
+
+.advantages{
+    /* margin-top: 3rem; */
+    margin-bottom: 5rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 3rem;
+}
+.advantages li{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap:1.5rem;
+    width: 17.5rem;
+}
+.advantages li img{
+   max-height: 3.125rem;
+   width: auto;
+}
+
+.questions{
+    margin-top: 4rem;
+    margin-bottom: 6.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.close-icon{
+    position: absolute;
+    right: 1.875rem;
+    top: 1.875rem;
+    transform: rotate(45deg);
+    transition: 0.3s;
+}
+.close-icon-opened{
+    transform: rotate(0deg);
+}
